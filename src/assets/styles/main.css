@@ -1,0 +1,28 @@
+/**
+ * Use this file to import partials.
+ * Do not include SCSS code in this file.
+ */
+
+/**
+ * Import dependencies
+ */
+/*@use "dependencies";*/
+@import "./_dependencies.css";
+
+/**
+ * Import layouts
+ * It's a best practice to use a different partial for each page
+ */
+
+/*@use "layouts/home";*/
+
+@theme {
+  --color-cocina-primary: #9e2a2b;
+  --color-cocina-secondary: #5f6f52;
+  --color-cocina-accent: #c8891e;
+  --color-cocina-bg: #faf3e7;
+  --color-cocina-text: #6b2f1a;
+
+  --font-poppins: "Poppins", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif;
+}
