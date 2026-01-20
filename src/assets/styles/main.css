@@ -26,3 +26,25 @@
   --font-poppins: "Poppins", sans-serif;
   --font-open-sans: "Open Sans", sans-serif;
 }
+
+@layer components {
+  /* 1. Botón de navegación - hover */
+  .nav-link-custom {
+    @apply font-open-sans text-sm font-bold uppercase transition-colors duration-300;
+  }
+  .nav-link-custom:hover {
+    @apply text-cocina-primary decoration-cocina-accent;
+  }
+  /* 2. Círculo numerado del blog - pseudo-elementos */
+  .blog-number-circle {
+    @apply relative pl-16 mb-8;
+  }
+  .blog-number-circle::before {
+    @apply absolute left-0 top-0 flex h-12 w-12 items-center justify-center rounded-full bg-cocina-primary text-white font-bold text-xl;
+    content: counter(blog-counter);
+  }
+  /* 3. Contenedor de notas destacadas  - uso de sombras y bordes */
+  .featured-note-card {
+    @apply bg-white p-8 border-t-4 border-cocina-accent rounded-lg shadow-sm;
+  }
+}

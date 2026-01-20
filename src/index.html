@@ -3,16 +3,40 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.css" />
     <!-- do not remove this line! -->
-    <title>UOC Boilerplate - PEC 3</title>
+    <title>PEC 3 - Jornadas de Cocina</title>
   </head>
   <body class="bg-cocina-bg font-open-sans text-cocina-text">
-    <h1 class="font-poppins text-cocina-primary text-4xl font-bold p-8">
-      Jornadas de Cocina
-    </h1>
-    <p class="px-8">Probando la fuente Open Sans y el color de texto marrón.</p>
+    <include src="./views/header.html"></include>
+
+    <main class="min-h-screen">
+      <section
+        class="flex flex-col items-center justify-center py-12 px-8 text-center md:py-24"
+      >
+        <div class="max-w-4xl space-y-6">
+          <div class="overflow-hidden rounded-lg shadow-xl">
+            <img
+              src="./assets/images/hero.webp"
+              alt="Hero Cocina"
+              class="w-full h-auto object-cover transform hover:scale-105 transition duration-700"
+            />
+          </div>
+          <h2
+            class="font-poppins text-4xl md:text-6xl text-cocina-primary font-bold"
+          >
+            Tradición en cada bocado
+          </h2>
+          <p class="max-w-2xl mx-auto text-lg md:text-xl leading-relaxed">
+            Descubre la esencia de nuestra gastronomía a través de los sentidos
+            y la historia.
+          </p>
+        </div>
+      </section>
+    </main>
+    <include src="./views/contact.html"></include>
+    <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script>
     <!-- do not remove this line! -->
   </body>
