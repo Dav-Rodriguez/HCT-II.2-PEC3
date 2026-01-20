@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Página hecha por IA - Concursantes</title>
+  </head>
+  <body class="bg-white font-open-sans text-cocina-text">
+    <include src="./views/header.html"></include>
+
+    <main>
+      <section class="py-27 text-center">
+        <h1 class="font-poppins font-bold text-4xl text-cocina-primary">
+          Concursantes
+        </h1>
+        <p class="mt-9 text-lg">
+          En esta sección se describen las recetas de los mejores concursantes
+        </p>
+      </section>
+
+      <section class="px-8 md:px-[10%]">
+        <div class="overflow-hidden rounded-lg mb-18">
+          <img
+            src="./assets/images/heroconcursantes.png"
+            alt="Concurso Hero"
+            class="w-full h-[400px] object-cover"
+          />
+        </div>
+      </section>
+
+      <section class="px-8 md:px-[10%] space-y-3">
+        <h2 class="font-poppins font-bold text-2xl text-cocina-primary">
+          Las recetas
+        </h2>
+        <p>Estas son las recetas de los mejores concursantes</p>
+      </section>
+
+      <section class="px-8 md:px-[10%] mt-9 mb-18">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="bg-white p-9 shadow-sm rounded-lg hover:shadow-md transition-shadow"
+          >
+            <h4 class="font-poppins font-bold text-lg mb-6">
+              Pasta de mariscos Cajun
+            </h4>
+            <div class="flex items-center gap-4">
+              <img
+                src="./assets/images/concursante1.png"
+                alt="John Cooper"
+                class="w-9 h-9 rounded-full"
+              />
+              <div>
+                <p class="font-bold text-sm">John Cooper</p>
+                <p class="text-xs text-cocina-text/70">
+                  “Esta receta de pasta de mariscos Cajun es picante, pero muy
+                  buena!”
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-9 shadow-sm rounded-lg hover:shadow-md transition-shadow"
+          >
+            <h4 class="font-poppins font-bold text-lg mb-6">
+              Salmón de tabla de cedro
+            </h4>
+            <div class="flex items-center gap-4">
+              <img
+                src="./assets/images/concursante2.png"
+                alt="Marta Alonso"
+                class="w-9 h-9 rounded-full"
+              />
+              <div>
+                <p class="font-bold text-sm">Marta Alonso</p>
+                <p class="text-xs text-cocina-text/70">
+                  “El salmón alcanza su total potencial cuando es asado encima
+                  de una tabla de cedro”
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white p-9 shadow-sm rounded-lg hover:shadow-md transition-shadow"
+          >
+            <h4 class="font-poppins font-bold text-lg mb-6">
+              Pollo al vinagre
+            </h4>
+            <div class="flex items-center gap-4">
+              <img
+                src="./assets/images/concursante3.png"
+                alt="Mary Ann Stones"
+                class="w-9 h-9 rounded-full"
+              />
+              <div>
+                <p class="font-bold text-sm">Mary Ann Stones</p>
+                <p class="text-xs text-cocina-text/70">
+                  “Pollo irresistible, cocinado con vinagre”
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="px-8 md:px-[10%] py-12 bg-white border-t border-black/5">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div class="flex flex-col justify-between">
+            <h3 class="font-poppins font-bold text-xl text-cocina-primary">
+              Concurso de cocina, edición 2024
+            </h3>
+            <div class="flex gap-4 text-gray-400 mt-6">
+              <i
+                class="fab fa-facebook hover:text-cocina-primary cursor-pointer"
+              ></i>
+              <i
+                class="fab fa-linkedin hover:text-cocina-primary cursor-pointer"
+              ></i>
+              <i
+                class="fab fa-youtube hover:text-cocina-primary cursor-pointer"
+              ></i>
+              <i
+                class="fab fa-instagram hover:text-cocina-primary cursor-pointer"
+              ></i>
+            </div>
+          </div>
+          <div class="grid grid-cols-3 gap-4 text-sm">
+            <div class="space-y-4">
+              <p class="font-bold">Recetas</p>
+              <ul class="space-y-2 text-gray-400">
+                <li>Pasta Cajun</li>
+                <li>Salmón Cedro</li>
+                <li>Pollo Vinagre</li>
+              </ul>
+            </div>
+            <div class="space-y-4">
+              <p class="font-bold">Concursantes</p>
+              <ul class="space-y-2 text-gray-400">
+                <li>John Cooper</li>
+                <li>Marta Alonso</li>
+                <li>Mary Ann Stones</li>
+              </ul>
+            </div>
+            <div class="space-y-4">
+              <p class="font-bold">Ediciones</p>
+              <ul class="space-y-2 text-gray-400">
+                <li>2024</li>
+                <li>2023</li>
+                <li>2022</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <include src="./views/contact.html"></include>
+    <include src="./views/navsecundaria.html"></include>
+    <include src="./views/footer.html"></include>
+
+    <script type="module" src="./assets/scripts/main.js"></script>
+  </body>
+</html>
